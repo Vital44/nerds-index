@@ -10,22 +10,21 @@
 	<header class="main-header">
 		<div class="container">
 			<a class="logo" href="#">
-				<img src="img/nerds-logo.png" alt="Nerds" class="logo">
+				<img src="img/nerds-logo.png" alt="Nerds" id="logo">
 			</a>
-			<nav class="mine-navigation">
-				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Корзина</a></li>
-					<img src="img/cart-icon.png" class="basket">
+			<nav>
+				<ul class="menu">
+					<li><a href="#" id="Studio">Студия</a></li>
+					<li><a href="#" id="Customers">Клиенты</a></li>
+					<li><a href="#" id="Shop">Магазин</a></li>
+					<li><a href="#" id="Contacts">Контакты</a></li>
+					<li><a href="#" id="Basket">Корзина</a></li>
+					<img src="img/cart-icon.png" id="icon">
 				</ul>
 			</nav>
-		</div>
-		</header>
+		</div>	
+	</header>
 		<main>
-			<div class="container">
 			<div class="title-item">
 			<div class="slider-indicator">
 				<label><input type="radio" name="time" value="slider1" checked></label>
@@ -34,25 +33,29 @@
 			</div>	
 				<div class="photos-controls">
 					<div class="slider1">
-					<img src="img/slide1.jpg" alt="slide1" width="698px" height="413px">
-						<h1>Долго,дорого,скурпулёзно</h1>
+					<div class="img">
+					<img src="img/slide1.png" alt="slide1" width="698px" height="413px">
+					</div>
+					<div class="desc">
+						<h1>Долго,дорого,<br>скурпулёзно</h1>
 				<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-				<button><a href="#">Узнать больше</a></button>
+				<a href="#">Узнать больше</a>
+				</div>
 					</div>
 					<div class="slider2">
-					<img src="img/slide2.jpg" alt="slide2" width="663px" height="430px">
+					<img src="img/slide2.png" alt="slide2" width="663px" height="430px">
 						<h1>Любим математику как никто другой</h1>
 						<p>Никакого креатива, только матаматические формулы<br> для расчёта идеальных пропорций.</p>
 						<button><a href="#">Узнать больше</a></button>
 					</div>
 					<div class="slider3">
-						<img src="img/slide3.jpg" alt="slide3" width="759px" height="411px">
+						<img src="img/slide3.png" alt="slide3" width="759px" height="411px">
 						<h1>Только ночь, только хардкор</h1>
 						<p>Работаем днём, как все? Мы против этого.<br>Ближе к получночи работа только начинается.</p>
 						<button><a href="#">Узнать больше</a></button>
 					</div>
 				</div>
-			</div>
+			</div>		
 			<div class="catalog">
 				<div class="catalog-item">
 					<img src="img/illustration-1.jpg" alt="Веб-сайты" width="300px" height="146px">
@@ -78,11 +81,11 @@
 					<h2>Мы маленькая, но гордая дизайн-студия из Краснодара</h2>
 					<p>Исповедуем принцыпыминимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
-					<ul>
-						<li>Вебсайтов любой сложности</li>
-						<li>Мобильных приложений для iOS и Android</li>
-						<li>Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
+						<ul>
+							<li>Вебсайтов любой сложности</li>
+							<li>Мобильных приложений для iOS и Android</li>
+							<li>Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
 				</div>
 				<div class="statistic">
 					<figure>
@@ -120,7 +123,7 @@
 		</div>	
 		</div>
 		</main>
-           <footer class="footer">
+           <footer>
      	   <div class="container">
      	      <section class="footer-social">
      		    <a class="social-btn-vk" href="vk.com"></a>

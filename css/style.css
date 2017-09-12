@@ -445,9 +445,44 @@ template {
 [hidden] {
   display: none;
 }
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: calc(24px/16px)
+  width: 1440px;
+}
+header {
+  background: #eeeeee;
+  height: 545px;
+}
+.container {
+ width: 1160px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  margin-top: 49px;
+}
+nav {
+  float:right;
+  margin-top: 82px;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.menu li {
+   float: left;
+   display: block;
+   margin-right: 48px;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
