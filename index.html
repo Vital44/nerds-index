@@ -4,81 +4,93 @@
 	<meta charset="UTF-8">
 	<title>Nerd's</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
+	<header>
 		<div class="container">
-			<a class="logo" href="#">
-				<img src="img/nerds-logo.png" alt="Nerds" class="logo">
-			</a>
-			<nav class="mine-navigation">
-				<ul>
+			<img src="img/nerds-logo.png" alt="Nerds" width="160" height="65" class="logo">
+			<nav>
+				<ul class="menu">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
 					<li><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Корзина</a></li>
-					<img src="img/cart-icon.png" class="basket">
+					<li>
+						<img src="img/cart-icon.png" class="basket">
+						<a href="#">Корзина</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
-		</header>
+	</header>
 		<main>
 			<div class="container">
 			<div class="title-item">
 			<div class="slider-indicator">
-				<label><input type="radio" name="time" value="slider1" checked></label>
-				<label><input type="radio" name="time" value="slider2"></label>
-				<label><input type="radio" name="time" value="slider3"></label>
+				<input type="radio" name="slider" value="slider1" checked>
+				<input type="radio" name="slider" value="slider2">
+				<input type="radio" name="slider" value="slider3">
 			</div>	
 				<div class="photos-controls">
-					<div class="slider1">
-					<img src="img/slide1.jpg" alt="slide1" width="698px" height="413px">
-						<h1>Долго,дорого,скурпулёзно</h1>
-				<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-				<button><a href="#">Узнать больше</a></button>
+					<div class="slider">
+					<img src="img/slide1.png" alt="slide1" width="698px" height="413px">
+					<div class="desc">
+						<h1>Долго,дорого,<br>скурпулёзно</h1>
+						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+						<a href="#">Узнать больше</a>
+				    </div>
 					</div>
 					<div class="slider2">
-					<img src="img/slide2.jpg" alt="slide2" width="663px" height="430px">
+					<img src="img/slide2.png" alt="slide2" width="663px" height="430px">
+					<div class="desc">	
 						<h1>Любим математику как никто другой</h1>
-						<p>Никакого креатива, только матаматические формулы<br> для расчёта идеальных пропорций.</p>
-						<button><a href="#">Узнать больше</a></button>
+						<p>Никакого креатива, только матаматические формулы для расчёта идеальных пропорций.</p>
+						<a href="#">Узнать больше</a>
+					</div>	
 					</div>
 					<div class="slider3">
-						<img src="img/slide3.jpg" alt="slide3" width="759px" height="411px">
-						<h1>Только ночь, только хардкор</h1>
-						<p>Работаем днём, как все? Мы против этого.<br>Ближе к получночи работа только начинается.</p>
-						<button><a href="#">Узнать больше</a></button>
+						<img src="img/slide3.png" alt="slide3" width="759px" height="411px">
+						<div class="desc">
+							<h1>Только ночь, только хардкор</h1>
+							<p>Работаем днём, как все? Мы против этого. Ближе к получночи работа только начинается.</p>
+							<a href="#">Узнать больше</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="catalog">
+			<div class="catalog clearfix" >
 				<div class="catalog-item">
 					<img src="img/illustration-1.jpg" alt="Веб-сайты" width="300px" height="146px">
-					<h2>Веб-сайты</h2>
-					<p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-				<a href="#">Заказать</a>	
+					<div class="desc-catalog">
+						<h2>Веб-сайты</h2>
+						<p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+						<a href="#">Заказать</a>
+					</div>	
 				</div>		
 				<div class="catalog-item">
 					<img src="img/illustration-2.jpg" alt="Приложения" width="300px" height="146px">
-					<h2>Приложения</h2>
-					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<a href="#">Заказать</a>	
+					<div class="desc-catalog">
+						<h2>Приложения</h2>
+						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+						<a href="#" id="green">Заказать</a>
+					</div>	
 				</div>
 				<div class="catalog-item">
 					<img src="img/illustration-3.jpg" alt="Презентации" width="300px" height="146px">
-					<h2>Презентации</h2>
-					<p>Вы даже не подозреваете, насколько вы изумительны</p>
-				<a href="#">Заказать</a>	
+					<div class="desc-catalog">
+						<h2>Презентации</h2>
+						<p>Вы даже не подозреваете, насколько вы изумительны</p>
+						<a href="#" id="yellow">Заказать</a>
+					</div>	
 				</div>	
 			</div>
-			<div class="future">
+			<div class="future clearfix">
 				<div class="information">
-					<h2>Мы маленькая, но гордая дизайн-студия из Краснодара</h2>
+					<h2>Мы маленькая, но гордая дизайн-студия из Краснодара.</h2>
 					<p>Исповедуем принцыпыминимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
-					<ul>
+					<ul class="orders">
 						<li>Вебсайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -87,15 +99,23 @@
 				<div class="statistic">
 					<figure>
 						<img src="img/nerds-illustration.jpg" alt="Nerd's" width="360px" height="208px">
-						<h2>С 2004 года любим точность во всём</h2>
+						<h3>С 2004 года любим точность во всём:</h3>
 					</figure>
 					<div class="description">
-						<h2>146%</h2>
-						<p>Уровень самоотдачи</p>
-						<h2>100%</h2>
-						<p>Соблюдение сроков</p>
-						<h2>50%</h2>
-						<p>Минимальная<br>предоплата</p>
+						<ul>
+							<li>
+								<h2>146%</h2>
+								<p>Уровень самоотдачи</p>
+							</li>
+							<li>
+								<h2>100%</h2>
+								<p>Соблюдение сроков</p>
+							</li>
+							<li>
+								<h2>50%</h2>
+								<p>Минимальная<br>предоплата</p>
+							</li>
+						</ul>							
 					</div>
 				</div>
 				<!--Логотипы сайтов(decor)-->
