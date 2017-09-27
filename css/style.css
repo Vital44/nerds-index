@@ -450,10 +450,8 @@ template {
 }
 body {
   font-family: "Roboto" Arial, sans-serif;
-  font-size: 16px;
   padding: 0;
   margin: 0;
-  
 }
 header {
   height: 545px;
@@ -535,11 +533,16 @@ nav {
 h1 {
   font-size: 40px;
 }
+h3 {
+  font-size: 16px;
+  padding: 10 20 20 20;
+  text-transform: uppercase;
+}
 .desc a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 45px;
+  margin-top: 25px;
   color: white;
   text-align: center;
   background-color: #fb565a;
@@ -590,15 +593,25 @@ h1 {
   width: 514px;
 }
 .information p {
-  width: 538px;
+  width: 550px;
+  font-size: 16px;
   margin-bottom: 50px;
 }
-.informatiom ul {
+.information ul {
   list-style: none;
 }
 .information li {
   position: relative;
   margin-top: 35px;
+}
+.orders li:before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  background-color: red;
+  top: 7px;
+  left: -35px;
 }
 figure {
   margin: 0;
@@ -611,12 +624,22 @@ img {
   width: 470px;
   height: 526px;
 }
-h3 {
-  text-transform: uppercase;
-}
 .description ul {
+  padding: 0;
+}
+.description li {
+  list-style: none;
   display: inline-block;
-  width: 410px;
+  width: 120px;
   height: 100px;
-  
+}
+.description h2 {
+  font-size: 36px;
+}
+.decor {
+  float: left;
+  border-top: 2px solid #eeeeee;
+  padding-top: 53px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eeeeee;
 }
