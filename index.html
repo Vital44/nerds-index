@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<div class="container clearfix">
+		<div class="container">
 			<img src="img/nerds-logo.png" alt="Nerds" width="160" height="65" class="logo">
 			<nav>
 				<ul class="menu">
@@ -28,29 +28,28 @@
 			<div class="container">
 			<div class="title-item">
 			<div class="slider-indicator">
-				<input type="radio" name="slider" value="slider1" checked>
-				<input type="radio" name="slider" value="slider2">
-				<input type="radio" name="slider" value="slider3">
-			</div>	
+				<input type="radio" name="slider" id="slide1" checked>
+				<input type="radio" name="slider" id="slide2">
+				<input type="radio" name="slider" id="slide3">
 				<div class="photos-controls">
-					<div class="slider">
+					<div class="slider-1">
 					<img src="img/slide1.png" alt="slide1" width="698px" height="413px">
 					<div class="desc">
-						<h1>Долго, дорого, скурпулёзно</h1>
-						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+						<h1>Долго, дорого, скурпулёзно.</h1>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 						<a href="#">Узнать больше</a>
 				    </div>
 					</div>
-					<div class="slider2">
-					<img src="img/slide2.png" alt="slide2" width="663px" height="430px">
+					<div class="slider-2">
+					<img src="img/slide2.png" alt="slider2" width="663px" height="430px">
 					<div class="desc">	
 						<h1>Любим математику как никто другой</h1>
 						<p>Никакого креатива, только матаматические формулы для расчёта идеальных пропорций.</p>
 						<a href="#">Узнать больше</a>
 					</div>	
 					</div>
-					<div class="slider3">
-						<img src="img/slide3.png" alt="slide3" width="759px" height="411px">
+					<div class="slider-3">
+						<img src="img/slide3.png" alt="slider3" width="759px" height="411px">
 						<div class="desc">
 							<h1>Только ночь, только хардкор</h1>
 							<p>Работаем днём, как все? Мы против этого. Ближе к получночи работа только начинается.</p>
@@ -59,7 +58,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="catalog clearfix" >
+			</div>
+			<div class="catalog" >
 				<div class="catalog-item">
 					<img src="img/illustration-1.jpg" alt="Веб-сайты" width="300px" height="146px">
 					<div class="desc-catalog">
@@ -85,10 +85,10 @@
 					</div>	
 				</div>	
 			</div>
-			<div class="future clearfix">
+			<div class="future">
 				<div class="information">
 					<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-					<p>Исповедуем принцыпыминимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<p>Исповедуем принцыпы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
 					<ul class="orders">
 						<li>Вебсайтов любой сложности</li>
@@ -119,24 +119,18 @@
 					</div>
 				</div>
 				<!--Логотипы сайтов(decor)-->
-				<div class="decor">
-					<ul>
-						<li>
-							<img src="img/logo-1.png" alt="logo1" width="199px" height="68px">
-						</li>
-						<li>
-							<img src="img/logo-2.png" alt="logo2" width="209px" height="87px">
-						</li>
-						<li>
-							<img src="img/logo-3.png" alt="logo3" width="185px" height="52px">
-						</li>
-						<li>
-							<img src="img/logo-4.png" alt="logo4" width="183px" height="84px">
-						</li>
-					</ul>
-				</div>
 			</div>
+			<div class="decor">
+				<a href="#"><img src="img/logo-1.png" alt="logo1" width="199px" height="68px">
+				</a>
+				<a href="#"><img src="img/logo-2.png" alt="logo2" width="209px" height="87px">
+				</a>
+				<a href="#"><img src="img/logo-3.png" alt="logo3" width="185px" height="52px">
+				</a>
+				<a href="#"><img src="img/logo-4.png" alt="logo4" width="183px" height="84px">
+				</a>
 			</div>
+		</div>
 			<div>
 				<img src="img/Карта.jpg" alt="Карта" class="maps">
 				<div class="map-marker">
@@ -147,30 +141,51 @@
 				<h3>NЁRDS DESIGN STUDIO</h3>
      			<p>191186, Санкт-Петербург,
      			ул. Б. Конюшенная, д. 19/8</p>
-     			<p>тел. +7 (812) 275-75-75</p>
-     			<a href="#">Напишите нам</a>
+     			<a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+     			<a class="link" href="#">Напишите нам</a>
 			</div>	
 		</div>
 		</main>
-           <div class="container">
-           <footer class="footer">
-     	      <section class="social">
-     	      <div class="vk">
-     		    <a class="social-btn-vk" href="vk.com"></a>
-     		    <img src="img/vk.png">
+           <footer>
+           		<div class="container">
+           		<section class="social">
+     	      <div>
+     		    <a href="vk.com">
+     		    	<img src="img/vk.png">
+     		    </a>    		    
      		  </div>
      		  <div>
-			    <a class="social-btn-fb" href="#"></a>
-			    <img src="img/fb.png">
+			    <a href="facebook.com">
+			    	<img src="img/fb-icon.png">
+			    </a>			    
 			  </div>
 			  <div>
-			    <a class="social-btn-inst" href="#"></a>
-			    <img src="img/insta.png">
+			    <a href="instagram.com">
+			    	<img src="img/insta-icon.png">
+			    </a>			    
 			  </div>
      	      </section>
      	      <section class="copirite">
      		  <h2>Давайте дружить, это выгодно!</h2>
      		  <p>Скидка 10% для друзей из социальных сетей.</p>
            </footer>
+           <div class="container">
+           <div class="modal">
+           	<form class="form-modal" action="">
+           		<h1>Напишите нам</h1>
+           		<div class="user-data">
+           			<p class="you-name">Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></p>
+           			<p class="you-email">Ваш e-mail:<input type="e-mail" placeholder="Для отправки ответа"></p>
+           		</div>
+           		<p>Текст письма:</p>
+           		<p>
+           			<textarea name="text" cols="50 rows="6" id="text" placeholder="В свободной форме"></textarea>
+           		</p>
+           		<button class="send">Отправить</button>
+           		<button class="close">X</button>           		
+           	</form>
+           	</div>
+           </div>
+           <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
